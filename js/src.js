@@ -166,8 +166,8 @@ export default class Sketch {
         let y = data.do.gamma;
         let x = data.do.beta;
 
-        that.mouseTargetY = clamp(x,-that.maxTilt, that.maxTilt)/that.maxTilt;
-        that.mouseTargetX = -clamp(y,-that.maxTilt, that.maxTilt)/that.maxTilt;
+        that.mouseTargetY = -clamp(x,-that.maxTilt, that.maxTilt)/that.maxTilt;
+        that.mouseTargetX = clamp(y,-that.maxTilt, that.maxTilt)/that.maxTilt;
 
       });
     }).catch(function(e) {
